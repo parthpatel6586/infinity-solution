@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  body {
+    @apply bg-surface-white text-body antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-dark;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-green to-brand-teal;
+  }
+
+  .bg-dot-grid {
+    background-size: 30px 30px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-surface-gray;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-green/20 rounded-full hover:bg-brand-green/40 transition-colors;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  border-radius: 0.75rem;
+  z-index: 10;
+}
