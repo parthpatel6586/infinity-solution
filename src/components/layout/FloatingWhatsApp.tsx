@@ -3,7 +3,7 @@
 import { MessageCircle } from 'lucide-react';
 
 export function FloatingWhatsApp() {
-  const phoneNumber = "918347109868"; // Removing + and spaces
+  const phoneNumber = "919662005440"; // Removing + and spaces
   const message = "Hello, I'm interested in your services.";
   
   const handleClick = () => {

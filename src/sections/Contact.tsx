@@ -193,7 +193,7 @@ export function Contact() {
 
             <div className="mt-16">
               <a 
-                href="https://wa.me/918347109868"
+                href="https://wa.me/919662005440"
                 target="_blank"
                 className="flex items-center justify-center gap-3 bg-white text-black w-full py-3.5 rounded-xl font-bold text-base hover:bg-surface-gray transition-all shadow-xl hover:scale-[1.02] active:scale-[0.98]"
               >
