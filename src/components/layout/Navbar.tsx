@@ -75,7 +75,7 @@ export function Navbar() {
             transition={{ delay: 0.8 }}
           >
             <Link
-              href="#contact"
+              href="/#contact"
               className="bg-brand-green text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-brand-teal transition-all shadow-lg shadow-brand-green/20"
             >
               Get Free Consultation
@@ -113,7 +113,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               className="mt-4 bg-brand-green text-white text-center py-4 rounded-xl font-bold text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >

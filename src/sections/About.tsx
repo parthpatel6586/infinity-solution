@@ -61,7 +61,7 @@ export function About() {
             </div>
 
             <Link 
-              href="#services"
+              href="/#services"
               className="inline-block border-2 border-brand-green text-brand-green px-8 py-3.5 rounded-xl font-bold text-lg hover:bg-brand-green hover:text-white transition-all text-center"
             >
               Learn More About Us

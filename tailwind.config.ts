@@ -15,6 +15,7 @@ const config: Config = {
           green: '#006B4F',
           blue: '#1E293B',
           teal: '#00897B',
+          whatsapp: '#25D366',
         },
         surface: {
           white: '#FFFFFF',

@@ -13,10 +13,10 @@ export function FloatingWhatsApp() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 z-50 p-4 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-all duration-300 animate-bounce"
+      className="fixed bottom-6 right-6 z-50 px-6 py-3 bg-brand-whatsapp text-white rounded-full shadow-lg hover:bg-[#128C7E] hover:scale-110 transition-all duration-300 shadow-brand-whatsapp/20 font-bold"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle size={28} />
+      Chat on WhatsApp
     </button>
   );
 }

@@ -93,9 +93,9 @@ export function Footer() {
               <li className="flex gap-4">
                 <Phone size={20} className="text-brand-green flex-shrink-0" />
                 <div className="flex flex-col gap-1">
-                  <span className="text-white/60 text-sm">+91 83471 09868</span>
-                  <span className="text-white/60 text-sm">+91 96620 05440</span>
-                  <span className="text-white/60 text-sm">+91 85111 01781</span>
+                  <span className="text-white/60 text-sm">+91 83471 09868 ( Nikunj Patel )</span>
+                  <span className="text-white/60 text-sm">+91 96620 05440 ( Axay Patel )</span>
+                  <span className="text-white/60 text-sm">+91 85111 01781 ( PradipKumar Patel )</span>
                 </div>
               </li>
               <li className="flex gap-4">

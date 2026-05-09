@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLink, MapPin, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +11,7 @@ const categories = ["All", "Residential", "Commercial", "Industrial", "Hospitali
 
 const projects = [
   {
+    slug: "smart-villa-integration",
     title: "Smart Villa Integration",
     category: "Residential",
     location: "Prahlad Nagar",
@@ -17,6 +19,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
   },
   {
+    slug: "enterprise-network-setup",
     title: "Enterprise Network Setup",
     category: "Commercial",
     location: "S.G. Highway",
@@ -24,6 +27,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800"
   },
   {
+    slug: "industrial-cctv-audit",
     title: "Industrial CCTV Audit",
     category: "Industrial",
     location: "Naroda GIDC",
@@ -31,6 +35,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800"
   },
   {
+    slug: "hotel-security-solution",
     title: "Hotel Security Solution",
     category: "Hospitality",
     location: "Ashram Road",
@@ -38,6 +43,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800"
   },
   {
+    slug: "rooftop-solar-plant",
     title: "Rooftop Solar Plant",
     category: "Industrial",
     location: "Vatva GIDC",
@@ -45,6 +51,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800"
   },
   {
+    slug: "smart-office-av-setup",
     title: "Smart Office AV Setup",
     category: "Commercial",
     location: "Gift City",
@@ -140,10 +147,13 @@ export function Projects() {
                   </div>
                   
                   <div className="pt-6 border-t border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                    <button className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-white hover:text-dark transition-all w-full justify-center">
+                    <Link 
+                      href={`/projects/${project.slug}`}
+                      className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-white hover:text-dark transition-all w-full justify-center"
+                    >
                       Learn More About Project
                       <ArrowRight size={16} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 

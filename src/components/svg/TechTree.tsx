@@ -4,20 +4,20 @@ import { motion } from "framer-motion";
 
 export function TechTree() {
   const icons = [
-    { x: 100, y: 50, name: "CCTV" },
-    { x: 50, y: 100, name: "WiFi" },
-    { x: 150, y: 100, name: "Solar" },
-    { x: 30, y: 180, name: "Server" },
-    { x: 170, y: 180, name: "Audio" },
-    { x: 100, y: 220, name: "Security" },
+    { x: 150, y: 50, name: "CCTV" },
+    { x: 100, y: 100, name: "WiFi" },
+    { x: 200, y: 100, name: "Solar" },
+    { x: 80, y: 180, name: "Server" },
+    { x: 220, y: 180, name: "Audio" },
+    { x: 150, y: 220, name: "Security" },
   ];
 
   return (
     <div className="relative w-full aspect-square max-w-[400px] mx-auto">
-      <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Trunk */}
         <motion.path
-          d="M100 300V150"
+          d="M150 300V150"
           stroke="#006B4F"
           strokeWidth="6"
           strokeLinecap="round"
@@ -30,7 +30,7 @@ export function TechTree() {
         {icons.map((icon, i) => (
           <motion.path
             key={i}
-            d={`M100 150Q${icon.x} 150 ${icon.x} ${icon.y}`}
+            d={`M150 150Q${icon.x} 150 ${icon.x} ${icon.y}`}
             stroke="#007BFF"
             strokeWidth="3"
             strokeLinecap="round"
@@ -63,7 +63,7 @@ export function TechTree() {
           key={`badge-${i}`}
           className="absolute bg-white shadow-lg rounded-full px-3 py-1 text-[10px] font-bold border border-brand-green/20 text-dark"
           style={{ 
-            left: `${(icon.x / 200) * 100}%`, 
+            left: `${(icon.x / 300) * 100}%`, 
             top: `${(icon.y / 300) * 100}%`,
             transform: 'translate(-50%, -150%)'
           }}

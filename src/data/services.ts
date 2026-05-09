@@ -146,7 +146,7 @@ export const services: Service[] = [
     desc: "IP cameras, video doorbells, night vision, mobile alerts.",
     longDesc: "Keep an eye on your home from anywhere. Our residential CCTV systems provide high-definition monitoring, intelligent motion alerts, and two-way audio for complete peace of mind.",
     features: ["High-Def Smart Cameras", "Instant Mobile Alerts", "Cloud & Local Recording", "Intelligent Face Detection"],
-    image: "https://images.unsplash.com/photo-1557597774-9d2739f85a76?q=80&w=2000"
+    image: "/images/services/home-cctv.png"
   },
   {
     id: 14,
@@ -156,7 +156,7 @@ export const services: Service[] = [
     desc: "Motion sensors, door/window alerts, panic buttons, 24/7 monitoring.",
     longDesc: "Our comprehensive home security solutions combine sensors, sirens, and monitoring to protect your family. From door sensors to glass-break detectors, we cover every vulnerability.",
     features: ["Intrusion Detection Sensors", "High-Decibel Alarm Sirens", "Emergency Panic Buttons", "24/7 App Monitoring"],
-    image: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=2000"
+    image: "/images/services/home-security.png"
   },
   {
     id: 15,
@@ -166,7 +166,7 @@ export const services: Service[] = [
     desc: "Distributed audio, in-ceiling speakers, zone-wise volume control.",
     longDesc: "Fill your home with music. Our multi-room audio systems allow you to stream different music in every room or synchronize your entire home for a party, all controlled from your phone.",
     features: ["In-Ceiling Hi-Fi Speakers", "Zone-Wise Volume Control", "Streaming Service Support", "Outdoor Audio Integration"],
-    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=2000"
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=1200"
   },
   {
     id: 16,
@@ -176,7 +176,7 @@ export const services: Service[] = [
     desc: "Biometric, RFID, PIN, app-controlled door locks for homes.",
     longDesc: "Upgrade your entry security with smart door locks. Choose from fingerprint recognition, PIN codes, or app control to manage access to your home without ever needing a physical key.",
     features: ["Fingerprint Biometrics", "RFID & PIN Entry", "Remote Guest Access", "Auto-Lock Security"],
-    image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2000"
+    image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1200"
   },
   {
     id: 17,
@@ -196,6 +196,6 @@ export const services: Service[] = [
     desc: "Video intercom, visitor recording, remote unlock via smartphone.",
     longDesc: "Never miss a visitor again. Our video door phones allow you to see and speak with anyone at your door from your indoor monitor or your smartphone, even when you're not at home.",
     features: ["Wide-Angle HD Camera", "Two-Way Audio Intercom", "Smartphone Notification", "Digital Door Unlock"],
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=2000"
+    image: "/images/services/video-door-phone.png"
   }
 ];

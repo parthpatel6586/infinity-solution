@@ -9,14 +9,15 @@ const team = [
     name: "Nikunj Patel",
     role: "Founder & Network Engineer | 7+ Years",
     image: "/team/nikunj.jpeg",
-    bio: "Nikunj is the driving force behind Infinity's technical vision. With 7+ years of hands-on expertise in ELV systems, network infrastructure, and electrical contracting, he has personally overseen 300+ installations across Ahmedabad. A certified network engineer with an EC qualification, Nikunj combines deep field knowledge with entrepreneurial leadership — ensuring every project is delivered with precision, on time, and built to last.",
+    bio: "Driving force behind Infinity's technical vision with 7+ years of expertise in ELV systems. He has overseen 300+ successful installations across Ahmedabad, ensuring precision and engineering excellence in every project.",
     skills: ["IT Networking", "ELV Systems", "Electrical (EC)", "Project Lead", "CCTV"],
     icon: ShieldCheck
   },
   {
     name: "PradipKumar Patel",
     role: "Founder & Head Engineer | 10+ Years",
-    bio: "PradipKumar brings over a decade of engineering mastery to Infinity's foundation. As Head Engineer and Co-Founder, he leads the design and execution of the company's most complex enterprise projects — from structured data cabling and server infrastructure to smart building integrations. His calm, methodical approach and deep technical knowledge across solar, UPS, and security systems have made him the backbone of Infinity's engineering excellence.",
+    image: "/team/axay.png",
+    bio: "Brings over a decade of engineering mastery to Infinity's foundation. He leads the design of complex enterprise projects and smart building integrations, serving as the backbone of our technical operations.",
     skills: ["Solar Energy", "UPS Systems", "Structured Cabling", "Enterprise Design", "Smart Buildings"],
     icon: Cpu
   },
@@ -24,7 +25,7 @@ const team = [
     name: "Axay Patel",
     role: "Founder & Head Engineer | 5+ Years",
     image: "/team/pradipkumar.jpeg",
-    bio: "Axay is the client-facing heart of Infinity's operations. With 5+ years of engineering experience, he specialises in residential smart solutions — from home automation and multi-room audio to CCTV surveillance and video door phone systems. His approachable personality and attention to detail ensure every homeowner and business client receives a solution tailored to their exact needs. Axay's commitment to after-sales support has earned Infinity its reputation for unmatched service.",
+    bio: "The client-facing heart of Infinity specializing in residential smart solutions. His focus on detail and commitment to support ensures every homeowner receives a solution tailored to their exact needs.",
     skills: ["Smart Home", "Home Automation", "AV Systems", "Client Relations", "After-Sales"],
     icon: MessageSquare
   }
@@ -61,13 +62,13 @@ export function Team() {
             >
               {/* Premium Circular Profile Image */}
               <div className="relative mx-auto mb-8">
-                <div className="relative w-48 h-48 rounded-full overflow-hidden border-8 border-surface-gray group-hover:border-brand-green/20 transition-all duration-500 shadow-xl">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-8 border-surface-gray group-hover:border-brand-green/20 transition-all duration-500 shadow-xl bg-surface-gray">
                   {member.image ? (
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      className={`object-cover ${(member as any).imagePosition || "object-top"} group-hover:scale-110 transition-transform duration-700`}
                     />
                   ) : (
                     <div className="flex items-center justify-center h-full w-full bg-surface-gray text-brand-green group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
@@ -92,8 +93,8 @@ export function Team() {
               </div>
 
               {/* Bio */}
-              <p className="text-body text-xs leading-relaxed mb-8 flex-grow italic opacity-80">
-                "{member.bio}"
+              <p className="text-body text-sm leading-relaxed mb-8 flex-grow text-gray-600">
+                {member.bio}
               </p>
 
               {/* Skills Tags */}
