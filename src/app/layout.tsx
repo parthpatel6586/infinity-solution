@@ -27,6 +27,15 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Infinity Data And Energy Solutions | Smart ELV & Solar Solutions Ahmedabad",
   description: "Ahmedabad's leading provider of ELV, Electrical & Solar solutions. Specializing in CCTV, Networking, Smart Home, and Energy Infrastructure.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png' },
+    ],
+  },
 };
 
 export default function RootLayout({

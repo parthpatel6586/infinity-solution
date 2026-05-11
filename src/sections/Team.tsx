@@ -23,7 +23,7 @@ const team = [
   },
   {
     name: "Axay Patel",
-    role: "Founder & Head Engineer | 5+ Years",
+    role: "Founder & Head Engineer | 12+ Years",
     image: "/team/pradipkumar.jpeg",
     bio: "The client-facing heart of Infinity specializing in residential smart solutions. His focus on detail and commitment to support ensures every homeowner receives a solution tailored to their exact needs.",
     skills: ["Smart Home", "Home Automation", "AV Systems", "Client Relations", "After-Sales"],
